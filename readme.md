@@ -5,7 +5,7 @@
 - PHP 7
 - Node.js 5
 
-## Featurs
+## Features
 
 - Multilocale (url, language switcher)
 - Asset management (ECMA Script 6 transpiling with Babel, asset versioning, SASS processing)
