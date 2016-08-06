@@ -7,6 +7,6 @@
 
 ## Features
 
-- Multilocale (url, language switcher)
+- Multi-locale (url, language switcher)
 - Asset management (ECMA Script 6 transpiling with Babel, asset versioning and bundling with rollup.js, SASS processing)
 - Bootstrap 4 Alpha
