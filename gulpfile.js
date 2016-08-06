@@ -1,22 +1,23 @@
 var exec = require('child_process').exec;
 var gulp = require('gulp');
 var elixir = require('laravel-elixir');
+require('laravel-elixir-rollup');
 
 elixir.config.sourcemaps = false;
 
 elixir(function(mix) {
 
-    console.log(elixir.config);
+    //console.log(elixir.config);
 
     // Delete versioned json file and all js, css in public to prevent conflicts
     mix.task('delete-assets');
 
     mix.sass('app.scss');
-    mix.babel('index.js');
+    mix.rollup('app.js');
 
     mix.version([
         'public/css/app.css',
-        'public/js/index.js'
+        'public/js/app.js'
     ]);
 
     mix.task('delete-temp-assets');
